@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "InfraScan Documentation"
+message: "If this documentation supports your academic work, cite the InfraScan project and its upstream implementation accurately."
+type: software
+authors:
+  - family-names: Shrivastav
+    given-names: Aayush Kumar
+    affiliation: "G. L. Bajaj Institute of Technology & Management"
+    orcid: "[TO BE CONFIRMED]"
+repository-code: "https://github.com/Aayush9808/InfraScan"
+url: "https://github.com/Aayush9808/InfraScan-Documentation"
+license: MIT
+keywords:
+  - pothole detection
+  - computer vision
+  - YOLO
+  - Streamlit

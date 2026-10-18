@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pptx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.zip
