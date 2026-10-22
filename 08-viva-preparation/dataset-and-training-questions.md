@@ -61,7 +61,7 @@ The checkpoint metadata records **15 epochs**, batch **16**, image size **640**,
 
 ### Q10. What augmentation was used?
 
-The metadata records Ultralytics defaults including mosaic, HSV jitter, translation/scale, flips, and `close_mosaic=3`. These increase variation and can improve robustness, but they can also create unrealistic combinations. The project did not run an augmentation ablation, so it cannot claim each transform contributed to the final mAP.
+The metadata records augmentation values including mosaic, HSV jitter, translation/scale, flips, mixup, and `close_mosaic=3`. These increase variation and can improve robustness, but they can also create unrealistic combinations. The project did not run an augmentation ablation, so it cannot claim each transform contributed to the final mAP.
 
 ### Q11. Why use a validation split?
 

@@ -78,7 +78,7 @@ A background image has no pothole instances, so its label file is empty. It teac
 
 ### Q19. What augmentation was used?
 
-The checkpoint metadata records Ultralytics defaults such as mosaic, HSV jitter, translation/scale, flips and `close_mosaic=3`. `train.py` exposes a set of augmentation flags. The exact effective values are those in the checkpoint's `train_args`, not assumptions from a different run. Augmentation improves robustness but can create unrealistic pothole geometry if pushed too far.
+The checkpoint metadata records augmentation values including mosaic, HSV jitter, translation/scale, flips, mixup and `close_mosaic=3`. `train.py` exposes a set of augmentation flags. The exact effective values are those in the checkpoint's `train_args`, not assumptions from a different run. Augmentation improves robustness but can create unrealistic pothole geometry if pushed too far.
 
 ### Q20. What is transfer learning here?
 
