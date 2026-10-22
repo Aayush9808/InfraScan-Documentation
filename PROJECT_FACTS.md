@@ -5,7 +5,8 @@ This file is the single source of truth for the documentation repository. It rec
 **Snapshot date:** 22 October 2026
 **Main repository:** <https://github.com/Aayush9808/InfraScan>
 **Documentation repository:** <https://github.com/Aayush9808/InfraScan-Documentation>
-**Main branch tip:** `4ddcff8` (`docs: rebuild README with verified results`)
+**Main branch tip:** `89143ad` (`docs: clarify CLI checkpoint fallback and link documentation`)
+**Documentation branch tip:** `34558c0` (`docs: QA pass — fix broken anchors, launcher caveat, and metric precision`)
 **Source of truth:** local checkout at `~/Desktop/College final year/InfraScan`
 
 If a statement is not supported below, treat it as unverified and mark it as such rather than filling the gap with an assumption.
@@ -354,6 +355,7 @@ Theme fonts are Calibri Light / Calibri. The source must remain unmodified; cont
 Main repository (`InfraScan`):
 
 ```text
+89143ad docs: clarify CLI checkpoint fallback and link documentation
 4ddcff8 docs: rebuild README with verified results
 d67ea1c feat(api): serve dashboard with FastAPI backend
 b0d0649 feat(ui): add local dashboard frontend
@@ -364,8 +366,29 @@ b0d0649 feat(ui): add local dashboard frontend
 Documentation repository (`InfraScan-Documentation`):
 
 ```text
+34558c0 docs: QA pass — fix broken anchors, launcher caveat, and metric precision
+df3ff50 docs: rebuild personalized team preparation guides
+77b1b8f docs: rebuild setup and execution chapter
+38d4f6c docs: rebuild dataset and model chapter
+f11e49a docs: rebuild architecture chapter with system, API, frontend and operations pages
+2b66f7d docs: add full project report and rebuild project documentation chapter
+6a18b76 docs: rebuild references, citation, licensing, and governance chapter
+d0467c6 docs: rebuild testing chapter with strategy, results, evidence, and test log
+0e60121 docs: add security, performance, and accessibility review
+56c993d docs: link citation licence to the code repository
+2b8eb4b docs: add section indexes to homepage navigation
+d4e9406 docs: record launcher checkpoint-path caveat
+fee98b1 docs: clarify checkpoint augmentation evidence
+963e538 docs: add file-by-file code walkthrough
+a1c92b9 docs: add project-wide viva question bank
+26387cb docs: add GLBITM poster copy and print layout guide
+46e69b6 docs: rebuild GLBITM slide content, speaker notes, and demo guide
+651dbd4 docs: rebuild documentation homepage and governance notes
+b2ee8a0 docs: add verified project facts and contribution evidence
 c5414ae Add InfraScan academic documentation
 ```
+
+Both repositories are clean and in sync with their `origin/main` remotes. The 20 documentation commits are listed newest-first; every one of them is a content change, and none rewrites prior history.
 
 All current commits in both repositories were authored by `Aayush Kumar Shrivastav <ashrivastav2209@gmail.com>` or the GitHub identity `Aayush9808 <ashrivastav2209@gmail.com>`. This does not prove that no other person contributed outside Git; it only records what the commit metadata shows.
 
