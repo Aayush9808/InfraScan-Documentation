@@ -190,7 +190,7 @@ Central configuration and path resolution.
 
 `ensure_directories()` creates result/job directories. `checkpoint_available()` requires a file with nonzero size. Paths are resolved from the package location, not the current working directory, so launching from another directory does not break static assets or results.
 
-**Viva trap:** `WEIGHTS_PATH` is read at import time. If you set `INFRASCAN_WEIGHTS` after importing `infrascan.config`, the change will not be picked up. Set it before launching the process, or use `--weights` with `run_app.py`.
+**Viva trap:** `WEIGHTS_PATH` is read at import time. If you set `INFRASCAN_WEIGHTS` after importing `infrascan.config`, the change will not be picked up. Set it in the shell before launching the process. The `run_app.py --weights` path is subject to the launcher-ordering caveat above; it is not a reliable substitute for the environment variable in a normal non-reload launch.
 
 ### `infrascan/severity.py`
 
@@ -399,7 +399,7 @@ A handcrafted design system:
 - CSS custom properties for surfaces, text, accent, severity colours, spacing, radii and shadows.
 - Dark glass-style cards, a sidebar, topbar, stat cards, dropzones, tables, badges, toasts and dialogs.
 - Responsive breakpoints at 1280, 1120, 1024, 820, 620 and 420 px; reduced-motion media query at the end.
-- Focus-visible styling and visually hidden helpers.
+- Focus-visible styling (`:focus-visible` at the top of the file). There is **no** `sr-only`/`visually-hidden` utility class, so any element that must be hidden from sight but exposed to assistive technology relies on `aria-label` or `aria-hidden` instead.
 - Local font faces for Inter and Space Grotesk.
 
 **Viva point:** the UI does not use a CSS framework or build pipeline. The trade-off is a larger hand-maintained stylesheet and no utility-class ecosystem; the benefit is a self-contained, offline-capable asset set.
