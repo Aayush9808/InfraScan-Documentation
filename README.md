@@ -141,8 +141,10 @@ The full evidence boundary is in [`PROJECT_FACTS.md`](PROJECT_FACTS.md); the tes
 ### 10 — References and governance
 - [References and governance index](10-references-and-governance/README.md)
 - [Bibliography](10-references-and-governance/bibliography.md)
-- [Acknowledgements](10-references-and-governance/acknowledgements.md)
+- [Citation guide](10-references-and-governance/citation-guide.md)
 - [Third-party attribution](10-references-and-governance/third-party-attribution.md)
+- [Licences and assets](10-references-and-governance/licences-and-assets.md)
+- [Acknowledgements](10-references-and-governance/acknowledgements.md)
 
 ### 11 — Security and quality
 - [Security and quality index](11-security-and-quality/README.md)
