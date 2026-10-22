@@ -104,6 +104,12 @@ Middleware adds `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Ref
 
 The app is a local, single-user academic tool. Jobs and results are ephemeral; in-memory jobs plus on-disk result directories are sufficient. A database would add schema, migrations and operational burden without solving a current requirement. The trade-off is no persistence across restarts and no multi-user isolation, which is explicitly documented as a limitation.
 
+### Q26. Does `run_app.py --weights` actually change the checkpoint?
+
+Not reliably, and this is a real ordering issue in the launcher rather than a hypothetical one. `run_app.py` imports `infrascan.config` near the top of the file to obtain `PROJECT_ROOT`, and `config.WEIGHTS_PATH` is resolved when that module is imported — before `main()` parses the command-line flags. In a normal launch Uvicorn then imports `app:app` in the same process, so the already-cached configuration module is reused and the path is unchanged. Two working alternatives: set the environment variable before launching (`INFRASCAN_WEIGHTS=/path/to/model.pt python run_app.py`), or pass `--reload`, whose child process re-imports the configuration with the variable already inherited from the parent.
+
+I state this as source-derived reasoning, not as a browser-verified test: it follows from the import order visible in `run_app.py` against `infrascan/config.py`, and it is recorded in [`../06-setup-and-execution/configuration.md`](../06-setup-and-execution/configuration.md). The practical consequence is that a demo which silently ignored `--weights` would still be showing the default checkpoint while the operator believes otherwise — which is exactly why the System page prints the resolved path, and why checking that path is part of the startup routine.
+
 ---
 
 ## Cross-examination prompts

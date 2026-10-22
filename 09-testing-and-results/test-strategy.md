@@ -24,7 +24,7 @@ The testing effort had three goals, in priority order:
 2. **Prove the failure paths are safe.** A missing checkpoint, an undecodable image, an oversized upload and an out-of-range threshold must produce an actionable error rather than a crash, a wrong answer or a silently substituted model.
 3. **Measure the model honestly.** The accuracy claim must come from a fresh evaluation on the held-out test split in a recorded environment, not from numbers inherited from an earlier project description.
 
-It deliberately did **not** aim at coverage, load, security certification or cross-platform compatibility. Those are named in the [not-measured](performance.md#what-is-not-measured) tables rather than left implied.
+It deliberately did **not** aim at coverage, load, security certification or cross-platform compatibility. Those are named in the [not-measured](../11-security-and-quality/performance.md#what-is-not-measured) tables rather than left implied.
 
 ## Scope
 

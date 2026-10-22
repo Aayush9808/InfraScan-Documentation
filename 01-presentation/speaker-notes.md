@@ -56,7 +56,7 @@ If asked “why not just classify an image as pothole/no pothole?”: classifica
 
 > CUDA is supported by the device-selection code, but we did not benchmark it here. Do not quote an NVIDIA number for this project.”
 
-If asked “why YOLO11n instead of a larger model?”: the nano model keeps local startup, memory and latency practical for a student prototype; the verified test mAP is 0.711 at IoU 0.50, and larger models would need a new training/evaluation run to justify a claim.
+If asked “why YOLO11n instead of a larger model?”: the nano model keeps local startup, memory and latency practical for a student prototype; the verified test mAP@0.50 is 0.7111 on the 718-image test split, and larger models would need a new training/evaluation run to justify a claim.
 
 ---
 

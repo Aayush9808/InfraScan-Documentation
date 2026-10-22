@@ -191,7 +191,7 @@ These are captures of the accepted dashboard, not mockups. Provenance and captur
 <p align="center">
   <img src="assets/evaluation/pr-curve.png" alt="Precision-recall curve from the verified 718-image test run" width="720">
 </p>
-<p align="center"><em>Precision-recall curve from the verified 718-image test run (mAP@0.50 = 0.711).</em></p>
+<p align="center"><em>Precision-recall curve from the verified 718-image test run (mAP@0.50 = 0.7111).</em></p>
 
 ---
 
