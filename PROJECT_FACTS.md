@@ -6,7 +6,7 @@ This file is the single source of truth for the documentation repository. It rec
 **Main repository:** <https://github.com/Aayush9808/InfraScan>
 **Documentation repository:** <https://github.com/Aayush9808/InfraScan-Documentation>
 **Main branch tip:** `89143ad` (`docs: clarify CLI checkpoint fallback and link documentation`)
-**Documentation branch tip:** `34558c0` (`docs: QA pass — fix broken anchors, launcher caveat, and metric precision`)
+**Documentation branch tip:** see §10. A file cannot contain the hash of the commit that writes it, so §10 lists every documentation commit through `34558c0` and `git log` is authoritative for the current tip.
 **Source of truth:** local checkout at `~/Desktop/College final year/InfraScan`
 
 If a statement is not supported below, treat it as unverified and mark it as such rather than filling the gap with an assumption.
@@ -388,7 +388,7 @@ b2ee8a0 docs: add verified project facts and contribution evidence
 c5414ae Add InfraScan academic documentation
 ```
 
-Both repositories are clean and in sync with their `origin/main` remotes. The 20 documentation commits are listed newest-first; every one of them is a content change, and none rewrites prior history.
+Both repositories are clean and in sync with their `origin/main` remotes. The 20 documentation commits are listed newest-first through `34558c0`; the commit that recorded this list, and any later one, sits on top of it, so `git log` is authoritative for the current tip and count. Every documentation commit is a content change, and none rewrites prior history.
 
 All current commits in both repositories were authored by `Aayush Kumar Shrivastav <ashrivastav2209@gmail.com>` or the GitHub identity `Aayush9808 <ashrivastav2209@gmail.com>`. This does not prove that no other person contributed outside Git; it only records what the commit metadata shows.
 
