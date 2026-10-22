@@ -81,6 +81,7 @@ The full evidence boundary is in [`PROJECT_FACTS.md`](PROJECT_FACTS.md); the tes
 - [Layout and print guide](02-poster/poster-layout-guide.md)
 
 ### 03 — Project documentation
+- [Project documentation index](03-project-documentation/README.md)
 - [Project report](03-project-documentation/project-report.md)
 - [Project overview](03-project-documentation/project-overview.md)
 - [Problem statement and objectives](03-project-documentation/problem-statement-and-objectives.md)
@@ -90,6 +91,7 @@ The full evidence boundary is in [`PROJECT_FACTS.md`](PROJECT_FACTS.md); the tes
 - [Technical glossary](03-project-documentation/technical-glossary.md)
 
 ### 04 — Architecture
+- [Architecture index](04-architecture/README.md)
 - [System architecture](04-architecture/system-architecture.md)
 - [Backend and API](04-architecture/backend-and-api.md)
 - [Frontend architecture](04-architecture/frontend-architecture.md)
@@ -99,6 +101,7 @@ The full evidence boundary is in [`PROJECT_FACTS.md`](PROJECT_FACTS.md); the tes
 - [Deployment and operations](04-architecture/deployment-and-operations.md)
 
 ### 05 — Dataset and model
+- [Dataset and model index](05-dataset-and-model/README.md)
 - [Dataset provenance](05-dataset-and-model/dataset-provenance.md)
 - [Annotation and preprocessing](05-dataset-and-model/annotation-and-preprocessing.md)
 - [Model explanation](05-dataset-and-model/model-explanation.md)
@@ -106,6 +109,7 @@ The full evidence boundary is in [`PROJECT_FACTS.md`](PROJECT_FACTS.md); the tes
 - [Licensing and attribution](05-dataset-and-model/licensing-and-attribution.md)
 
 ### 06 — Setup and execution
+- [Setup index](06-setup-and-execution/README.md)
 - [Installation](06-setup-and-execution/installation.md)
 - [Configuration](06-setup-and-execution/configuration.md)
 - [Application usage](06-setup-and-execution/application-usage.md)
@@ -128,17 +132,20 @@ The full evidence boundary is in [`PROJECT_FACTS.md`](PROJECT_FACTS.md); the tes
 - [Testing and limitations](08-viva-preparation/testing-and-limitations-questions.md)
 
 ### 09 — Testing and results
+- [Testing index](09-testing-and-results/README.md)
 - [Test strategy](09-testing-and-results/test-strategy.md)
 - [Verified results](09-testing-and-results/verified-results.md)
 - [Evidence index](09-testing-and-results/evidence-index.md)
 - [Manual test log](09-testing-and-results/manual-test-log.md)
 
 ### 10 — References and governance
+- [References and governance index](10-references-and-governance/README.md)
 - [Bibliography](10-references-and-governance/bibliography.md)
 - [Acknowledgements](10-references-and-governance/acknowledgements.md)
 - [Third-party attribution](10-references-and-governance/third-party-attribution.md)
 
 ### 11 — Security and quality
+- [Security and quality index](11-security-and-quality/README.md)
 - [Security and privacy](11-security-and-quality/security-and-privacy.md)
 - [Performance](11-security-and-quality/performance.md)
 - [Accessibility](11-security-and-quality/accessibility.md)
