@@ -66,11 +66,17 @@ A minimal ASGI entrypoint. It imports `app` from `infrascan.api` and exposes it 
 The user-facing launcher.
 
 - Parses `--host` (default `127.0.0.1`), `--port` (default `8000`), `--weights`, `--no-browser`, `--reload`.
-- Resolves the weights argument and sets `INFRASCAN_WEIGHTS` before importing/serving the app.
+- Assigns `--weights` to `INFRASCAN_WEIGHTS` and resolves the path.
 - Prints a small banner and optionally opens the browser.
 - Calls `uvicorn.run("app:app", ...)`.
 
-**Why it matters:** `config.py` reads `INFRASCAN_WEIGHTS` at import time. The launcher must set it before the app module is imported; otherwise the path change would be ignored. This is a subtle environment/import-order issue worth mentioning in a viva.
+**Important launcher caveat:** `run_app.py` imports `infrascan.config` at module load, before `main()` parses the arguments. Because `config.WEIGHTS_PATH` is resolved when that module is imported, `--weights` does not change the already-resolved path in the running process. The reliable method is to set the environment variable before launching:
+
+```bash
+INFRASCAN_WEIGHTS=/path/to/best.pt python run_app.py
+```
+
+This is a documented limitation of the current launcher, not a reason to claim the flag works. It is also why the code walkthrough says the environment must be set before import.
 
 **Demo command:**
 

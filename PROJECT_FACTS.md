@@ -69,6 +69,8 @@ flowchart LR
 |---|---|
 | `app.py` | ASGI entrypoint; exports `app` from `infrascan.api` |
 | `run_app.py` | Launcher with `--host`, `--port`, `--weights`, `--no-browser`, `--reload` |
+
+> **Launcher caveat verified on 22 October 2026:** `run_app.py` imports `infrascan.config` before `main()` parses arguments. `config.WEIGHTS_PATH` is therefore already resolved, and `--weights` does not change the running app's checkpoint path. Use `INFRASCAN_WEIGHTS=/path/to/best.pt python run_app.py` before launch. This is a known code/launcher limitation; do not document `--weights` as reliably selecting the checkpoint.
 | `infrascan/api.py` | FastAPI routes, validation, static serving, security headers |
 | `infrascan/config.py` | Paths, upload limits, thresholds, TTLs, allowed extensions |
 | `infrascan/inference.py` | Model lifecycle, device selection, image prediction, annotation, runtime metadata |
