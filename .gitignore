@@ -13,3 +13,7 @@ venv/
 *.jpeg
 *.mp4
 *.zip
+
+# Evidence assets are allowed; template binaries and unrelated media remain ignored.
+!assets/screenshots/*.webp
+!assets/evaluation/*.png
