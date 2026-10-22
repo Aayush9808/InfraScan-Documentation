@@ -1,17 +1,31 @@
 cff-version: 1.2.0
-title: "InfraScan Documentation"
+title: "InfraScan — AI-Powered Road Inspection and Pothole Detection System"
 message: "If this documentation supports your academic work, cite the InfraScan project and its upstream implementation accurately."
 type: software
 authors:
   - family-names: Shrivastav
     given-names: Aayush Kumar
     affiliation: "G. L. Bajaj Institute of Technology & Management"
-    orcid: "[TO BE CONFIRMED]"
+  - family-names: Rawal
+    given-names: Kajal
+    affiliation: "G. L. Bajaj Institute of Technology & Management"
+  - family-names: Shakya
+    given-names: Khushi
+    affiliation: "G. L. Bajaj Institute of Technology & Management"
+  - family-names: Saini
+    given-names: Ronak
+    affiliation: "G. L. Bajaj Institute of Technology & Management"
 repository-code: "https://github.com/Aayush9808/InfraScan"
 url: "https://github.com/Aayush9808/InfraScan-Documentation"
 license: MIT
+version: "2.0.0"
+date-released: "2026-10-22"
 keywords:
   - pothole detection
+  - road inspection
   - computer vision
-  - YOLO
-  - Streamlit
+  - object detection
+  - YOLO11
+  - Ultralytics
+  - FastAPI
+  - academic project
